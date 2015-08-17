@@ -19,3 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 ]
+
+urlpatterns += [url(r'^Tea/', include('TeaBusiness.urls', namespace='Tea')),
+]
